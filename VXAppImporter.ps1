@@ -1,6 +1,6 @@
 ﻿
 function global:ImportVXApps{
-    $vxapp_root = "c:\apps"
+    $vxapp_root = $PlayniteApi.Dialogs.SelectFolder()
     $VXAppLoader = $PlayniteApi.Database.Emulators | Where { $_.Name -eq "VXApp" } | Select-Object -First 1
     if(!$VXAppLoader){
         $PlayniteApi.Dialogs.ShowMessage("Couldn't find VXApp emulator configuration in Playnite. Make sure you have VXApp emulator configured.")
