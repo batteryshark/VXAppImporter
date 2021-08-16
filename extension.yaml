@@ -1,0 +1,12 @@
+Name: VXApp Importer
+Author: BatteryShark
+Version: 1.0.0
+Module: VXAppImporter.ps1
+Type: Script
+Functions: 
+    - Description: Import VXApps
+      FunctionName: ImportVXApps
+Links:
+    - Name: Source
+      Url: WARK
+Icon: Resources\vxapp.png
